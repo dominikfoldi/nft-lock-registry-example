@@ -10,9 +10,9 @@ pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "./LockRegistry.sol";
-import "../interfaces/ILock.sol";
+import "./interfaces/ILock.sol";
 
-contract Erc721LockRegistry is ERC721, LockRegistry, ILock {
+contract ERC721LockRegistry is ERC721, LockRegistry, ILock {
 
 	constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {
 	}
